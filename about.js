@@ -36,7 +36,7 @@ if (galleryImages.length) {
   galleryImages.forEach((image) => {
     image.tabIndex = 0;
     image.addEventListener("click", () => {
-      lightboxImage.src = image.currentSrc || image.src;
+      lightboxImage.src = image.src;
       lightboxImage.alt = image.alt;
       lightbox.classList.add("open");
     });
