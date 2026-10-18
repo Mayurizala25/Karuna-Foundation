@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verified animal rescue, veterinary treatment and welfare services from Shree Karuna Foundation Trust.">
+  <link rel="icon" type="image/png" href="karuna-logo.png">
+  <title>Services - Karuna Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="ui-polish.css">
+  <link rel="stylesheet" href="footer.css">
+  <style>
+    .services-page{--service-gold:#c59a52}.services-page .about-hero{padding:52px 0;background:#fff}.services-page .hero-inner{max-width:900px}
+    .services-page .hero-inner h1{color:var(--maroon);font-size:clamp(2.6rem,5vw,4.5rem);line-height:1.02;letter-spacing:-.05em}.services-page .hero-inner h1 em{color:var(--maroon)}.services-page .hero-inner>p:last-child{color:var(--muted);max-width:560px;margin:18px 0 0}
+    .services-page .section-heading{margin-bottom:28px}.services-page .section-heading h2{font-size:clamp(2rem,3.5vw,3.2rem)}.services-page .section-heading>p{color:var(--muted);max-width:430px;margin:10px auto 0;font-size:.82rem}
+    .service-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.service-stats article{background:#fff;border:1px solid var(--line);border-top:3px solid var(--service-gold);border-radius:7px;padding:20px}.service-stats strong,.service-stats span{display:block}.service-stats strong{color:var(--maroon);font-size:2rem;line-height:1}.service-stats span{color:var(--muted);font-size:.72rem;margin-top:10px}
+    .service-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.service-cards article{background:var(--ivory);border:1px solid var(--line);border-radius:7px;padding:22px;min-height:135px}.service-cards span{color:var(--maroon);font-size:.7rem;font-weight:700}.service-cards h3{font-size:1rem;margin:19px 0 0}
+    .donor-section{background:#fff}.donor-list{display:grid;grid-template-columns:repeat(2,1fr);gap:9px 30px;counter-reset:donor}.donor-list li{list-style:none;display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:start;border-bottom:1px solid var(--line);padding:10px 0;color:var(--muted);font-size:.75rem}.donor-list li:before{counter-increment:donor;content:counter(donor,decimal-leading-zero);color:var(--maroon);font-weight:700}
+    .rescue-section{background:var(--ivory)}.rescue-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px}.rescue-card{position:relative;height:245px;margin:0;overflow:hidden;border-radius:8px;background:#ddd}.rescue-card:first-child{height:502px;grid-row:span 2}.rescue-card img{width:100%;height:100%;object-fit:cover}.rescue-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(20,12,10,.72))}.rescue-card figcaption{position:absolute;z-index:1;bottom:14px;left:15px;color:#fff;font-size:.74rem;font-weight:700}.video-links{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}.video-link{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:7px;padding:15px;color:var(--maroon);font-size:.75rem;font-weight:700}
+    .volunteer-cta{background:var(--maroon);color:#fff}.volunteer-cta .about-container{display:flex;align-items:center;justify-content:space-between;gap:24px}.volunteer-cta .eyebrow{color:#f2c9bf}.volunteer-cta h2{font-size:clamp(2rem,4vw,3.2rem);margin:0}.volunteer-cta .button{background:#fff;color:var(--maroon)}.review-card{max-width:560px;margin:auto;padding:28px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:9px;box-shadow:var(--shadow)}.review-card strong,.review-card b,.review-card p{display:block}.review-card strong{color:var(--maroon);letter-spacing:.12em}.stars{display:block;color:#d39a32;letter-spacing:4px}.review-card b{font-size:.78rem}.review-card p{color:var(--muted);font-size:.7rem}.review-card blockquote{font-size:.85rem;font-style:italic;margin:15px 0}.text-link{color:var(--maroon);font-size:.75rem;font-weight:700}
+    .services-page .services-contact{background:#fff}.contact-card{display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--ivory);border:1px solid var(--line);border-left:4px solid var(--maroon);border-radius:7px;padding:22px}.contact-card h3{margin:0 0 5px;color:var(--maroon)}.contact-card p{margin:0;color:var(--muted);font-size:.78rem}.contact-card .button{white-space:nowrap}
+    @media(max-width:850px){.services-page .about-hero{padding:40px 0}.service-stats{grid-template-columns:repeat(2,1fr)}.service-cards{grid-template-columns:repeat(2,1fr)}.donor-list{grid-template-columns:1fr}.rescue-grid{grid-template-columns:repeat(2,1fr)}.rescue-card:first-child{height:245px;grid-row:auto;grid-column:span 2}.volunteer-cta .about-container{display:block}.volunteer-cta .button{margin-top:18px}.contact-card{display:block}.contact-card .button{margin-top:16px;display:inline-block}}
+    @media(max-width:480px){.services-page .about-hero{padding:34px 0}.service-stats,.service-cards,.rescue-grid,.video-links{grid-template-columns:1fr}.service-cards article{min-height:0}.rescue-card,.rescue-card:first-child{height:220px;grid-column:auto}.donor-list li{font-size:.72rem}.contact-card{padding:18px}}
+  </style>
+</head>
+<body class="services-page">
+  <header class="about-header">
+    <div class="about-topbar"><div class="about-container topbar-inner"><span>24x7 Animal Helpline</span><a href="tel:+919898499954">+91 98984 99954</a></div></div>
+    <div class="about-container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Karuna Foundation home"><img src="karuna-logo.png" alt="Karuna Foundation logo"><span><strong>Karuna</strong><small>Foundation Trust</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Services</a><a href="volunteers.html">Volunteers</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a><a class="button" href="index.html#donate">Donate now <span>↗</span></a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero"><div class="about-container hero-inner"><p class="eyebrow">Services we provide</p><h1>Care that reaches<br><em>where it’s needed.</em></h1><p>Practical rescue, treatment and support for animals across Gujarat.</p></div></section>
+
+    <section class="about-section commitment"><div class="about-container"><div class="section-heading centered"><p class="eyebrow">Get to Know Us</p><h2>Support that moves<br><em>with compassion.</em></h2><p>Several kind-hearted donors have supported animal welfare with generous vehicle contributions:</p></div><div class="service-stats"><article><strong>2</strong><span>Hydraulic Rescue Ambulance</span></article><article><strong>1</strong><span>Jiv Daya Rath</span></article><article><strong>3</strong><span>Hospital</span></article><article><strong>17</strong><span>Ambulance &amp; Bike</span></article></div></div></section>
+
+    <section class="about-section donor-section"><div class="about-container"><div class="section-heading centered"><p class="eyebrow">Supporters of animal welfare</p><h2>Generosity in <em>action.</em></h2></div><ol class="donor-list">
+      <li>Rashtra Sant Param Gurudev Shree Namramuni Maharaj Saheb (Arham Yuva Group), Matru Shree Vimalben Dilipbhai Maheta and Matru Shree Umaben Mahendrabhai Maheta</li><li>Animal Welfare Board of India</li><li>PASCHIM GUJRAT VIJ CO LTD (PGVCL)</li><li>Gujarat Energy Transmission Corporation Limited (GETCO)</li><li>District Administration of Rajkot – District Collector</li><li>Samast Mahajan</li><li>Shree Sardar Patel Social Group, Rajkot (West)</li><li>In memory of Late Prakashbhai Kurjibhai Pansuriya and Late Kaushaben Prakashbhai Pansuriya – Pansuriya Family</li><li>Rishirajbhai Milindkumar Shah</li><li>Bhabha Family</li><li>Pravinchandra Haridas Desai, Vinod Pravinchandra Desai, and Kashmira Pankajbhai Desai</li><li>Late Smt. Jignashaben Manubhai Maheta and Dharmeshbhai Manubhai Maheta (Tanishq Jewellers)</li><li>Amitbhai Magiya – Hiswish Charitable Trust Mumbai</li><li>Jigna Sudhaben Kanaiyalal Shah Donated by Neka, Reaa</li><li>Kusumben and Bhupatbhai Sheth Family</li><li>Sheth Shri Laljibhai D. Kanabar's Family (Manavadar)</li><li>Late Shree Maheshbhai Mansata – Mansata Family</li><li>Shri Andh Apang Gausewa Trust (Wakaner)</li><li>Shri Madhoobhai &amp; Smt. Meenalben Mehta (Romeera Foundation, UK)</li><li>Shri Shashikant Bosmiya</li><li>Shri Himmatlal Ghelani (via Pujya Bhaktididi – Jalaram Mandir)</li><li>Shree giriraj foundation rajkot</li>
+    </ol></div></section>
+
+    <section class="about-section people"><div class="about-container"><div class="section-heading centered"><p class="eyebrow">How we help</p><h2>Services for every<br><em>urgent need.</em></h2></div><div class="service-cards"><article><span>01</span><h3>24x7 Animal Helpline</h3></article><article><span>02</span><h3>Free Veterinary Treatments</h3></article><article><span>03</span><h3>Ambulance and Bike</h3></article><article><span>04</span><h3>Animal Rescue &amp; Rehabilitation</h3></article><article><span>05</span><h3>Awareness &amp; Anti-Cruelty Campaigns</h3></article><article><span>06</span><h3>Disaster Relief Operations</h3></article></div></div></section>
+
+    <section class="about-section rescue-section"><div class="about-container"><div class="section-heading centered"><p class="eyebrow">Our rescue Operations</p><h2>Real work, <em>real care.</em></h2><p>Photos and videos from rescue and treatment work.</p></div><div class="rescue-grid"><figure class="rescue-card"><img src="website-assets/about/campaign.jpg" alt="Animal rescue ambulance"><figcaption>Rescue operations</figcaption></figure><figure class="rescue-card"><img src="website-assets/about/about-image-32.jpeg" alt="Animal welfare operation"><figcaption>Field support</figcaption></figure><figure class="rescue-card"><img src="website-assets/about/about-image-33.jpeg" alt="Animal welfare camp"><figcaption>Community care</figcaption></figure></div><div class="video-links"><a class="video-link" href="https://www.youtube.com/watch?v=ZgUnLx6R0vU" target="_blank" rel="noreferrer">Watch rescue campaign ↗</a><a class="video-link" href="https://www.youtube.com/watch?v=MQbveS7q5Hw" target="_blank" rel="noreferrer">Watch field work ↗</a></div></div></section>
+
+    <section class="about-section volunteer-cta"><div class="about-container"><div><p class="eyebrow">Join the work</p><h2>Become a <em>volunteer.</em></h2></div><a class="button" href="volunteers.html">Apply Now ↗</a></div></section>
+
+    <section class="about-section reviews"><div class="about-container"><div class="section-heading centered"><p class="eyebrow">Our Review</p><h2>Trusted by our <em>community.</em></h2></div><div class="review-card"><strong>GOOD</strong><span class="stars">★★★★★</span><b>Based on 396 reviews</b><p>Trustindex verifies that the original source of the review is Google.</p><blockquote>“Great initiative amd great work by foundation”</blockquote><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Karuna+Foundation+Rajkot" target="_blank" rel="noreferrer">View Google reviews ↗</a></div></div></section>
+
+    <section class="about-section services-contact"><div class="about-container"><div class="contact-card"><div><h3>Need help for an animal?</h3><p>For free treatment of stray animals and birds in Rajkot city, contact the 24x7 helpline.</p></div><a class="button" href="tel:+919898499954">Call +91 98984 99954</a></div></div></section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/919898499954" target="_blank" rel="noopener noreferrer" aria-label="Chat with Karuna Foundation on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3.2A12.66 12.66 0 0 0 5.18 22.37L3.4 28.8l6.58-1.73A12.65 12.65 0 1 0 16.04 3.2Zm0 22.96a10.27 10.27 0 0 1-5.24-1.43l-.38-.23-3.9 1.03 1.04-3.8-.25-.4a10.3 10.3 0 1 1 8.73 4.83Zm5.65-7.72c-.31-.16-1.83-.9-2.12-1-.28-.1-.49-.16-.7.16-.2.31-.8 1-.98 1.2-.18.21-.36.24-.67.08-.31-.16-1.31-.48-2.5-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.46-.54.15-.18.2-.31.31-.52.1-.2.05-.39-.03-.54-.08-.16-.7-1.68-.96-2.3-.25-.6-.5-.52-.7-.53h-.6c-.2 0-.54.08-.82.39-.28.31-1.08 1.05-1.08 2.56s1.11 2.97 1.27 3.18c.15.2 2.18 3.33 5.28 4.67.74.32 1.31.51 1.75.65.74.23 1.41.2 1.94.12.59-.09 1.83-.75 2.09-1.47.26-.72.26-1.34.18-1.47-.08-.13-.28-.2-.59-.36Z"/></svg>
+    <span class="whatsapp-float-label">Chat on WhatsApp</span>
+  </a>
+  <footer class="site-footer">
+    <div class="site-footer-inner site-footer-main">
+      <section class="site-footer-identity"><img class="site-footer-logo" src="website-assets/careers/images/ogo.png" alt="Voice of the Voiceless"><p>Our Mission Is To Save Every Possible Life By Ensuring That No Animal Goes Without The Treatment It Needs.</p><h2>Contact Information</h2><a href="mailto:info@animalhelpline.in">info@animalhelpline.in</a><a href="tel:+919898499954">+91 98984 99954</a><a href="tel:+919898019059">+91 98980 19059</a></section>
+      <div class="site-footer-locations">
+        <article class="site-footer-location"><h3>Shri Karuna Foundation Trust</h3><p>C/o. Neminath Enterprise Opp. Metro Plaza, Moti Tanki Chowk Nr. Jansatta Chowk, Rajkot</p><a href="https://www.google.com/maps/search/?api=1&amp;query=C%2Fo.%20Neminath%20Enterprise%20Opp.%20Metro%20Plaza%2C%20Moti%20Tanki%20Chowk%2C%20Rajkot" target="_blank" rel="noopener noreferrer">Get Direction ↗</a></article>
+        <article class="site-footer-location"><h3>Shree Karuna Foundation Trust</h3><p>C/o. Smt. Sheni Memorial Trust Near Shreyas School, FCI Godown Road, Near Sheth Nagar, Opp. Nageshwar Tirth, Jamnagar Road, Rajkot</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Sheni%20Memorial%20Trust%2C%20Jamnagar%20Road%2C%20Rajkot" target="_blank" rel="noopener noreferrer">Get Direction ↗</a></article>
+        <article class="site-footer-location"><h3>Animal Helpline Veterinary Hospital</h3><p>Old Shreeji Gaushala, B/H Tulip Party Plot, Gondal Road, Vavdi, Rajkot (Gujarat-India).</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Animal%20Helpline%20Veterinary%20Hospital%2C%20Gondal%20Road%2C%20Rajkot" target="_blank" rel="noopener noreferrer">Get Direction ↗</a></article>
+        <article class="site-footer-location"><h3>Shree Karuna Foundation Trust Free Animal &amp; Bird Shelter</h3><p>Hanuman Madhi Chok, Tirupati Nagar Street No. 1, Besides cancer hospital, Rajkot</p></article>
+      </div>
+      <section class="site-footer-contact"><h2>Get In Touch</h2><p>Managed by Shree Karuna Foundation Trust, Rajkot.<br>Trust Regd. No E-7920</p><a class="site-footer-call" href="tel:+919898499954">Call the 24x7 helpline</a></section>
+    </div>
+    <div class="site-footer-copyright">© 2026 Shree Karuna Foundation Trust · Rajkot, Gujarat · India</div>
+  </footer>
+  <script src="about.js"></script>
+  <script src="ui-polish.js"></script>
+</body>
+</html>

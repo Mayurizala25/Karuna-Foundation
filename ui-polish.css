@@ -1,0 +1,71 @@
+html { scroll-padding-top: 18px; }
+body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+main > section { position: relative; }
+main > section:not(.hero):not(.campaign-band):not(.donate):not(.doctors):not(.volunteer-cta):not(.contact-intro):not(.contact-photo-strip):not(.contact-locations):not(.contact-review):not(.volunteer-gallery):not(.career-photo-strip) { scroll-margin-top: 18px; }
+.nav-links a, .career-nav a, .contact-nav a { transition: color .18s ease, background-color .18s ease, border-color .18s ease; }
+.site-header, .about-header { box-shadow: 0 5px 20px rgba(23, 22, 21, .045); }
+.button, .site-footer-call, .career-submit, .contact-form-card button, .site-footer-location a, .service-cards article, .service-stats article, .contact-location, .location-card, .leader-grid article, .career-review-card, .review-card, .review-summary blockquote, .testimonial-card, .commitment-grid article, .portrait-grid article, .image-grid figure { transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease; }
+.service-cards article:hover, .service-stats article:hover, .contact-location:hover, .location-card:hover, .leader-grid article:hover, .career-review-card:hover, .review-card:hover, .review-summary blockquote:hover, .testimonial-card:hover, .commitment-grid article:hover, .portrait-grid article:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(32, 24, 19, .1); }
+.section-heading h2, .volunteer-section-heading h2, .career-heading h1, .career-heading h2, .contact-intro h1 { text-wrap: balance; }
+.section-heading > p, .heading-aside, .story-intro > p:last-child, .commitment-grid p { line-height: 1.7; }
+.service-cards article, .service-stats article, .commitment-grid article, .portrait-grid article, .image-grid figure, .contact-location, .location-card, .volunteer-form-card, .career-form, .career-review-card, .review-card, .testimonial-card, .video-frame, .video-link { border-radius: 10px; }
+.service-cards article, .service-stats article, .commitment-grid article { padding: 22px; }
+.service-stats article { box-shadow: 0 7px 20px rgba(32, 24, 19, .04); }
+.service-cards article { box-shadow: 0 7px 20px rgba(32, 24, 19, .045); }
+.contact-location, .location-card, .volunteer-form-card, .career-form, .review-card, .testimonial-card, .career-review-card { box-shadow: 0 10px 28px rgba(32, 24, 19, .055); }
+.career-form input:not([type=file]), .career-form textarea, .volunteer-form input:not([type=radio]):not([type=checkbox]):not([type=file]), .volunteer-form textarea, .contact-form-card input, .contact-form-card textarea { border-radius: 6px; }
+.career-form input:focus, .career-form textarea:focus, .volunteer-form input:focus, .volunteer-form textarea:focus, .contact-form-card input:focus, .contact-form-card textarea:focus { outline: 2px solid rgba(129, 20, 19, .16); outline-offset: 1px; }
+.photo-grid figure, .rescue-card, .career-team-photo, .volunteer-gallery img, .career-photo-strip img, .contact-photo-strip img { border-radius: 8px; }
+.report-grid figure { padding: 8px; }
+.quick-contacts > a, .location-card, .contact-card, .review-card, .career-form, .volunteer-form-card { box-shadow: 0 10px 28px rgba(32, 24, 19, .06); }
+.campaign-details article { border-radius: 9px; }
+.campaign-list div { border-radius: 7px; transition: background-color .18s ease; }
+.campaign-list div:hover { background: rgba(255, 255, 255, .07); }
+.donation-main, .payment-card, .tithi-card { border-radius: 10px; }
+.donor-fields input, .donor-fields textarea { border-radius: 6px; }
+.contact-actions a, .direction-link, .career-review-link, .review-card a { transition: color .18s ease, background-color .18s ease, transform .18s ease; }
+.contact-actions a:hover, .direction-link:hover, .career-review-link:hover, .review-card a:hover { transform: translateY(-1px); }
+.whatsapp-float[hidden] { display: none !important; }
+.whatsapp-float {
+  position: fixed;
+  z-index: 30;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .23);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 9px 24px rgba(0, 0, 0, .25); }
+.whatsapp-float:focus-visible { outline: 3px solid #811413; outline-offset: 3px; }
+.whatsapp-float svg { width: 27px; height: 27px; fill: currentColor; }
+.whatsapp-float-label {
+  position: absolute;
+  right: calc(100% + 10px);
+  padding: 6px 9px;
+  border-radius: 5px;
+  background: #171615;
+  color: #fff;
+  font: 600 .68rem "Onest", sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(4px);
+  transition: opacity .18s ease, transform .18s ease;
+}
+.whatsapp-float:hover .whatsapp-float-label, .whatsapp-float:focus-visible .whatsapp-float-label { opacity: 1; transform: translateX(0); }
+@media (max-width: 560px) {
+  .whatsapp-float { width: 46px; height: 46px; right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); }
+  .whatsapp-float svg { width: 25px; height: 25px; }
+  .section-heading { gap: 12px; }
+  .about-section { padding-top: 42px; padding-bottom: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
