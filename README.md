@@ -1,28 +1,30 @@
 # Karuna Foundation Website
 
-Rebuild project for the Shree Karuna Foundation Trust website, currently live at [animalhelpline.in](https://animalhelpline.in/).
+Responsive static website for Shree Karuna Foundation Trust, built with HTML, CSS, and JavaScript. No package installation or build step is required.
 
-## Status
+## Pages
 
-**Pre-design phase.** No visual/UX design has started. Current contents:
+- `index.html` — homepage, animal-care services, donation form, and campaigns
+- `about.html` — foundation story, trustees, doctors, and campaigns
+- `services.html` — animal-care services and rescue work
+- `contact.html` — contact options and Rajkot locations
+- `volunteers.html` — volunteer application and leadership
+- `careers.html` — career application information and form
 
-- [index.html](index.html), [style.css](style.css), [script.js](script.js) — empty scaffolding only, not yet built out.
-- [website-audit/](website-audit/) — a full content audit of the existing live site, page by page, done before any design work begins.
+## Shared files
 
-## Website audit
+- `style.css`, `about.css`, `contact.css`, `careers.css`, `volunteers.css` — page and responsive styles
+- `footer.css`, `ui-polish.css` — shared footer and visual refinements
+- `script.js`, `about.js`, `contact.js`, `careers.js`, `volunteers.js`, `ui-polish.js` — navigation and page interactions
+- `form-storage.js` — client-side form validation and local submission notices
+- `website-assets/` and `karuna-logo.png` — local photos, documents, and brand assets
 
-Start with [website-audit/SITE_INVENTORY.md](website-audit/SITE_INVENTORY.md) for the full list of live URLs, cross-cutting issues, and recommended next steps. Individual page audits:
+Open `index.html` directly or serve the repository root with any static web server.
 
-- [home.md](website-audit/home.md)
-- [about.md](website-audit/about.md)
-- [services.md](website-audit/services.md)
-- [contact.md](website-audit/contact.md)
-- [volunteers.md](website-audit/volunteers.md)
-- [careers.md](website-audit/careers.md)
-- [donations.md](website-audit/donations.md)
-- [other-pages.md](website-audit/other-pages.md) — sitemap-only pages outside the main nav (duplicates, stubs, CSR/campaign landing pages, events)
-- [images-assets.md](website-audit/images-assets.md)
+## Form behavior
 
-## Next steps
+There is no backend configured. Forms validate and save text fields to the current browser's local storage; submissions are not delivered to the foundation. Uploaded files are not stored. The form status messages include this limitation and provide contact details.
 
-See the "Next steps" section in [SITE_INVENTORY.md](website-audit/SITE_INVENTORY.md) — decisions needed from the client on duplicate pages, donation infrastructure, and asset sourcing before design begins.
+## Design source
+
+The supplied six-page design reference informed the page layouts and visual system. The website uses its existing local photographs, verified page content, and contact information rather than unverified prototype claims or remote mockup assets.
