@@ -7,7 +7,7 @@
     frame = 0;
     const buttonRect = button.getBoundingClientRect();
     const controls = document.querySelectorAll(
-      "form input, form textarea, form select, form button, form [role='status'], .site-footer-call, .site-footer-copyright, main h1, main h2, main h3, main p, main li, main blockquote, main figcaption"
+      "form input, form textarea, form select, form button, form [role='status'], .site-footer-call"
     );
     const overlaps = [...controls].some((control) => {
       if (!control.getClientRects().length) return false;

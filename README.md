@@ -14,7 +14,7 @@ Responsive static website for Shree Karuna Foundation Trust, built with HTML, CS
 ## Shared files
 
 - `style.css`, `about.css`, `contact.css`, `careers.css`, `volunteers.css` — page and responsive styles
-- `footer.css`, `ui-polish.css` — shared footer and visual refinements
+- `footer.css`, `ui-polish.css`, `whatsapp.css` — shared footer, visual refinements, and early WhatsApp button styling
 - `script.js`, `about.js`, `contact.js`, `careers.js`, `volunteers.js`, `ui-polish.js` — navigation and page interactions
 - `form-storage.js` — client-side form validation and local submission notices
 - `website-assets/` and `karuna-logo.png` — local photos, documents, and brand assets
