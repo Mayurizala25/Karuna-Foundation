@@ -11,17 +11,21 @@
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="ui-polish.css">
   <link rel="stylesheet" href="home-page.css">
+  <link rel="stylesheet" href="site-chrome.css">
 </head>
-<body class="home-page">
+<body class="site-page home-page">
   <header class="site-header">
-    <div class="topbar"><div class="container topbar-inner"><span>24x7 Animal Helpline <a href="tel:+919898499954">+91 98984 99954</a></span><span class="topbar-message">RESCUE <i></i> CARE <i></i> REHABILITATE <i></i> RAJKOT, GUJARAT</span></div></div>
+    <div class="topbar"><div class="container topbar-inner"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4c0 1-1 2-2 2C10 20 4 14 3 5c0-1 1-2 2-2Z"/></svg>24x7 Animal Helpline <a href="tel:+919898499954">+91 98984 99954</a></span><span class="topbar-message">RESCUE <i></i> CARE <i></i> RAJKOT, GUJARAT</span></div></div>
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="Karuna Foundation home"><img class="brand-logo" src="karuna-logo.png" alt="Karuna Foundation logo" loading="eager" decoding="async"><span><strong>Karuna</strong><small>Foundation Trust</small></span></a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav-links" aria-label="Main navigation">
         <a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="volunteers.html">Volunteers</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
-        <a class="button button-small" href="#donate">Donate now <span aria-hidden="true">↗</span></a>
       </nav>
+      <div class="header-actions">
+        <form class="site-search" role="search"><button class="search-toggle" type="button" aria-label="Open search" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.5 4.5"/></svg></button><input type="search" aria-label="Search this page" placeholder="Search this page"><span class="search-status" aria-live="polite"></span></form>
+        <a class="button header-donate" href="#donate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>Donate</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
@@ -42,19 +46,20 @@
     </section>
 
     <section class="stats" id="impact"><div class="container stats-grid">
-      <div class="stat"><strong>22+</strong><span>Years of experience</span></div>
-      <div class="stat"><strong>70+</strong><span>Staff members</span></div>
-      <div class="stat"><strong>400+</strong><span>Animals treated daily</span></div>
-      <div class="stat"><strong>1.4M+</strong><span>Animals treated</span></div>
+      <div class="stat"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="5.3" cy="8.2" rx="2.1" ry="2.8"/><ellipse cx="10" cy="5.4" rx="2.1" ry="2.8"/><ellipse cx="15" cy="5.4" rx="2.1" ry="2.8"/><ellipse cx="19" cy="8.2" rx="2.1" ry="2.8"/><path d="M12 10.5c-3.5 0-7.3 4.1-7.3 7.2 0 2.2 1.6 3.4 3.5 3.4 1.5 0 2.4-.7 3.8-.7s2.3.7 3.8.7c1.9 0 3.5-1.2 3.5-3.4 0-3.1-3.8-7.2-7.3-7.2Z"/></svg></span><span class="stat-copy"><strong>22+</strong><span>Years of experience</span></span></div>
+      <div class="stat"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></span><span class="stat-copy"><strong>70+</strong><span>Staff members</span></span></div>
+      <div class="stat"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3V10Z"/><path d="M8 10h8"/></svg></span><span class="stat-copy"><strong>400+</strong><span>Animals treated daily</span></span></div>
+      <div class="stat"><span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1H3Zm13-9a3 3 0 1 0-1-5.8M18 14a5 5 0 0 1 3 4.5v1h-3"/></svg></span><span class="stat-copy"><strong>1.4M+</strong><span>Animals treated</span></span></div>
+      <a class="impact-link" href="#donate"><span>REAL HELP.</span><strong>LASTING IMPACT.</strong><span aria-hidden="true">→</span></a>
     </div></section>
 
     <section class="section services" id="services"><div class="container">
       <div class="section-heading"><div><p class="eyebrow">Health · Safety · Dignity</p><h2>Our Animal Care Services</h2><p class="services-intro">Comprehensive care for a safer, kinder tomorrow.</p></div><a class="all-services-link" href="services.html">View all services <span aria-hidden="true">→</span></a></div>
       <div class="service-grid">
-        <article class="service-card featured"><span class="card-number">01</span><img src="website-assets/services/images/IMG-20240202-WA0009.jpg" alt="Rescued dog receiving veterinary care" loading="lazy" decoding="async"><div class="service-icon">✚</div><h3>24x7 Animal Helpline</h3><p>Be the first call for a sick, injured or stranded animal.</p><a href="tel:+919898499954">Call the helpline →</a></article>
-        <article class="service-card"><span class="card-number">02</span><img src="website-assets/home/images/dog-veterinary-surgery.jpg" alt="Veterinary team performing surgery on a dog" loading="lazy" decoding="async"><div class="service-icon">♡</div><h3>Free Veterinary Treatment</h3><p>Timely treatment and compassionate support for stray animals.</p></article>
-        <article class="service-card"><span class="card-number">03</span><img src="website-assets/home/images/IMG_3999-scaled.jpg" alt="Karuna Foundation animal rescue ambulance" loading="lazy" decoding="async"><div class="service-icon">↗</div><h3>Ambulance and Bike</h3><p>Mobile rescue support that reaches animals in need.</p></article>
-        <article class="service-card"><span class="card-number">04</span><img src="website-assets/home/images/cow-shelter.jpg" alt="Cows receiving feed and care at a shelter" loading="lazy" decoding="async"><div class="service-icon">⌂</div><h3>Rescue &amp; Rehabilitation</h3><p>Safe shelter and care while animals recover.</p></article>
+        <a class="service-card featured" href="services.html"><span class="card-number">01</span><img src="website-assets/services/images/IMG-20240202-WA0015.jpg" alt="Volunteers caring for a rescued horse" loading="lazy" decoding="async"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="5.5" cy="8" rx="2" ry="2.8"/><ellipse cx="10.1" cy="5.2" rx="2" ry="2.7"/><ellipse cx="15" cy="5.2" rx="2" ry="2.7"/><ellipse cx="19" cy="8" rx="2" ry="2.8"/><path d="M12 10.5c-3.3 0-7 4.1-7 7.2a3.2 3.2 0 0 0 3.3 3.1c1.5 0 2.4-.8 3.7-.8s2.2.8 3.7.8a3.2 3.2 0 0 0 3.3-3.1c0-3.1-3.7-7.2-7-7.2Z"/></svg></span><h3>24x7 Animal Helpline</h3><p>First-call support for sick, injured or stranded animals.</p><span class="service-card-cta">Learn More <span aria-hidden="true">→</span></span></a>
+        <a class="service-card" href="services.html"><span class="card-number">02</span><img src="website-assets/home/images/dog-veterinary-surgery.jpg" alt="Veterinary team performing surgery on a dog" loading="lazy" decoding="async"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3v5a6 6 0 0 0 12 0V3M4 3h4m8 0h4M12 14v2a4 4 0 0 0 8 0v-2"/><circle cx="20" cy="14" r="2"/></svg></span><h3>Medical Care &amp; Treatment</h3><p>Timely treatment and compassionate support for stray animals.</p><span class="service-card-cta">Learn More <span aria-hidden="true">→</span></span></a>
+        <a class="service-card" href="services.html"><span class="card-number">03</span><img src="website-assets/home/images/cow-shelter.jpg" alt="Cows receiving food and care at a shelter" loading="lazy" decoding="async"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16l-1.5 9h-13L4 10Z"/><path d="M3 10h18M8 7c0-1 .7-1.5.7-2.5M12 7c0-1 .7-1.5.7-2.5M16 7c0-1 .7-1.5.7-2.5"/></svg></span><h3>Food &amp; Shelter</h3><p>Food and safe shelter while animals recover.</p><span class="service-card-cta">Learn More <span aria-hidden="true">→</span></span></a>
+        <a class="service-card" href="services.html"><span class="card-number">04</span><img src="website-assets/home/images/bird-veterinary-care.jpg" alt="Bird receiving veterinary care" loading="lazy" decoding="async"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13c4-1 6-5 10-7 3-1 6 0 8 2-2 0-4 1-5 3 2 1 3 3 3 5-3-2-6-2-9 0l-4 3v-5l-3-1Z"/><path d="m14 8 2-3"/></svg></span><h3>Wildlife &amp; Bird Care</h3><p>Rescue and treatment for injured birds and animals.</p><span class="service-card-cta">Learn More <span aria-hidden="true">→</span></span></a>
         <a class="service-card service-donate" href="#donate"><img src="website-assets/careers/images/303040119-303040619-Vierno-YingYang-bird-feeder-SW-Sem-00389.jpg" alt="" loading="lazy" decoding="async"><span class="donate-card-label">Support</span><h3>Every Life Matters</h3><p>Your support helps rescue, treat and rehabilitate animals.</p><span class="service-donate-link" aria-hidden="true">Donate now →</span></a>
       </div>
     </div></section>
@@ -63,7 +68,10 @@
       <div class="home-story">
         <figure><img src="website-assets/services/images/WhatsApp-Image-2025-11-12-at-12.00.41-PM-1.jpeg" alt="An animal receiving treatment from the veterinary team" loading="lazy" decoding="async"><figcaption>Care in action</figcaption></figure>
         <div class="home-story-copy"><p class="eyebrow">Rescue stories</p><h2>Compassion for every <em>life.</em></h2><p>Our team provides free treatment for stray animals and birds in Rajkot, with rescue and care for animals across Gujarat.</p><a href="services.html">Explore our work <span aria-hidden="true">→</span></a></div>
-        <aside class="home-story-contact"><span class="story-contact-mark" aria-hidden="true">✦</span><strong>Need help for an animal?</strong><p>Call the 24x7 Animal Helpline.</p><a href="tel:+919898499954">+91 98984 99954</a></aside>
+        <a class="home-story-review" href="https://www.google.com/maps/search/?api=1&amp;query=Karuna+Foundation+Rajkot" target="_blank" rel="noopener noreferrer" aria-label="Read Karuna Foundation Google reviews">
+          <img src="website-assets/services/images/WhatsApp-Image-2025-11-12-at-12.00.43-PM.jpeg" alt="Dog receiving veterinary treatment" loading="lazy" decoding="async">
+          <span class="home-story-review-copy"><span class="eyebrow">Community feedback</span><q>Great initiative and great work by foundation</q><span class="home-story-review-link">Read Google reviews <span aria-hidden="true">→</span></span></span>
+        </a>
       </div>
     </div></section>
 
@@ -92,19 +100,26 @@
                 </div>
                 <div class="amount-input"><span aria-hidden="true">₹</span><input id="donation-amount" name="amount" type="number" min="1" step="1" inputmode="decimal" placeholder="Enter any amount" aria-label="Donation amount"></div>
               </div>
-              <div class="donor-fields">
-                <label>Full name *<input name="fullname" type="text" autocomplete="name" maxlength="120" required></label>
-                <label>Email *<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
-                <label>Mobile number *<input name="mobile" type="tel" autocomplete="tel" maxlength="30" required></label>
-                <label>City<input name="city" type="text" autocomplete="address-level2" maxlength="100"></label>
-                <label class="message-field">Message<textarea name="message" rows="3" maxlength="1000"></textarea></label>
-              </div>
-              <button class="button donor-submit" type="submit">Send donation enquiry <span aria-hidden="true">↗</span></button>
-              <p class="form-note">Enquiry details are saved temporarily in this browser only. No payment is processed on this website.</p>
-              <p class="form-status" id="donor-form-status" aria-live="polite"></p>
+              <details class="donation-enquiry">
+                <summary>Complete donation enquiry <span aria-hidden="true">→</span></summary>
+                <div class="donation-enquiry-fields">
+                  <div class="donor-fields">
+                    <label>Full name *<input name="fullname" type="text" autocomplete="name" maxlength="120" required></label>
+                    <label>Email *<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
+                    <label>Mobile number *<input name="mobile" type="tel" autocomplete="tel" maxlength="30" required></label>
+                    <label>City<input name="city" type="text" autocomplete="address-level2" maxlength="100"></label>
+                    <label class="message-field">Message<textarea name="message" rows="3" maxlength="1000"></textarea></label>
+                  </div>
+                  <button class="button donor-submit" type="submit">Send donation enquiry <span aria-hidden="true">↗</span></button>
+                  <p class="form-note">Enquiry details are saved temporarily in this browser only. No payment is processed on this website.</p>
+                  <p class="form-status" id="donor-form-status" aria-live="polite"></p>
+                </div>
+              </details>
             </form>
           </div>
-          <div class="donation-details">
+          <details class="payment-information">
+            <summary aria-label="Open bank, UPI and QR donation details">Donate now <span aria-hidden="true">↗</span></summary>
+            <div class="donation-details">
             <article class="payment-card" data-payment="indian">
               <p class="card-kicker">Indian citizens</p>
               <p class="helper">For transactions through Indian bank accounts or cards issued by Indian banks.</p>
@@ -128,28 +143,23 @@
               <p>For information about the scheme, contact the foundation.</p>
               <a href="mailto:info@animalhelpline.in?subject=Donation%20Tithi%20Scheme%20enquiry">Enquire by email ↗</a>
             </article>
-          </div>
+            </div>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="campaign-band" id="campaigns"><div class="container"><div class="campaign-grid"><div class="campaign-copy"><p class="eyebrow light">Campaigns with purpose</p><h2>Small acts.<br><em>Far-reaching care.</em></h2><p>Free distribution campaigns help communities protect animals and birds with food, water and practical resources.</p><a class="button button-outline" href="#donate">Help us reach more <span>↗</span></a></div><div class="campaign-list"><div><strong>25 lakh+</strong><span>Bird nests distributed</span></div><div><strong>5 lakh+</strong><span>Water bowls distributed</span></div><div><strong>2 lakh+</strong><span>Water feeding bowls</span></div><div><strong>₹15,000+</strong><span>Daily Param Jivdaya Rath expense</span></div></div></div><div class="campaign-details"><article><h3>Param Jivdaya Rath</h3><p>450 kg wheat and grains for birds, 30 kg wheat balls for fish, 25 kg sweet corn for squirrels, milk and rotis for 700 stray dogs, and 10 kg ant feed.</p></article><article><h3>Lumpy Virus Relief</h3><p>Joint operations with Arham Yuva Seva Group across 17 affected Gujarat districts.</p><div class="detail-stats"><b>40K+ <small>free vaccines</small></b><b>30K+ <small>cattle saved</small></b><b>100K+ <small>gaushalas</small></b></div></article><article><h3>Maha Karuna Abhiyan</h3><p>During lockdown, the Trust fed stray animals and birds with community support.</p><div class="detail-stats"><b>3K+ kg <small>grains/day</small></b><b>200+ <small>volunteers</small></b><b>20+ <small>vehicles</small></b></div></article><article><h3>Voice of Karuna</h3><p>Two state-of-the-art studios for NGOs, activists and content creators to raise awareness for animal welfare, environment and social causes. Investment: ₹8 lakh+.</p></article></div></div></section>
-
-    <section class="why-donate" aria-labelledby="why-donate-title">
-      <div class="container">
-        <div class="why-heading"><p class="eyebrow">Why donate?</p><h2 id="why-donate-title">Your support helps <em>care continue.</em></h2></div>
-        <div class="why-grid">
-          <article><span>01</span><h3>24x7 rescue &amp; helpline support</h3></article>
-          <article><span>02</span><h3>Free veterinary treatment</h3></article>
-          <article><span>03</span><h3>Food &amp; shelter for stray animals</h3></article>
-          <article><span>04</span><h3>Disaster rescue operations</h3></article>
-          <article><span>05</span><h3>Awareness &amp; education programs</h3></article>
-          <article><span>06</span><h3>Transparent &amp; accountable</h3></article>
+    <section class="home-trust" aria-label="Our commitment">
+      <div class="container home-trust-inner">
+        <p class="home-trust-heading">Trusted by our community</p>
+        <div class="home-trust-items">
+          <div><span aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span>Free veterinary treatment</div>
+          <div><span aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/></svg></span>24x7 rescue helpline</div>
+          <div><span aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3V10Z"/></svg></span>Care for animals &amp; birds</div>
+          <div><span aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span>Transparent donation details</div>
         </div>
       </div>
     </section>
-
-    <section class="section contact" id="contact"><div class="container contact-grid"><div><p class="eyebrow">Reach us</p><h2>Every call can<br><em>save a life.</em></h2><p>For free treatment of stray animals and birds in Rajkot, please contact our team.</p><div class="contact-actions"><a class="button" href="tel:+919898499954">Call +91 98984 99954</a><a class="text-link" href="mailto:info@animalhelpline.in">info@animalhelpline.in <span>↗</span></a></div><div class="quick-contacts"><a href="tel:+919898499954"><strong>24x7 Animal Helpline</strong><span>09898499954 · Every call can save a life</span></a><a href="https://wa.me/919898499954" target="_blank" rel="noreferrer"><strong>Emergency WhatsApp</strong><span>Chat with our team now ↗</span></a></div></div><div class="location-card"><p class="card-kicker">Veterinary hospital</p><h3>Animal Helpline Veterinary Hospital</h3><p>Old Shreeji Gaushala, B/H Tulip Party Plot, Gondal Road, Vavdi, Rajkot (Gujarat-India).</p><a href="https://maps.google.com/?q=Old+Shreeji+Gaushala+Rajkot" target="_blank" rel="noreferrer">Get directions ↗</a><p class="registration">Managed by Shree Karuna Foundation Trust, Rajkot<br>Trust Regd. No E-7920</p></div></div></section>
   </main>
 
   <a class="whatsapp-float" href="https://wa.me/919898499954" target="_blank" rel="noopener noreferrer" aria-label="Chat with Karuna Foundation on WhatsApp">
@@ -183,5 +193,6 @@
   <script src="form-storage.js"></script>
   <script src="script.js"></script>
   <script src="ui-polish.js"></script>
+  <script src="site-chrome.js"></script>
 </body>
 </html>
